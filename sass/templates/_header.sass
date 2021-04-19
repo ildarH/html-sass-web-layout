@@ -13,13 +13,15 @@
     top: 0
     left: 0
   &__logo
+    display: flex
+    justify-self: start
     background-color: $primaryColor
     font-style: normal
     font-weight: bold
     font-size: 36px
-    line-height: 45px
+    // line-height: 45px
     color: #fff
-    padding: 25px 23px 32px 23px
+    padding: 25px 22px 33px
     border-bottom-left-radius: 22px
     border-bottom-right-radius: 22px
     text-decoration: none
@@ -28,21 +30,44 @@
       cursor: pointer
   &__menu
     display: flex
-    max-width: 1300px
     justify-content: space-between
-    position: absolute
-    top: 0
+    justify-self: end
     z-index: 1000
+    margin: auto
+    max-width: 1645px
+    width: 1645px
+  &__nav
+    display: flex
+    height: 50px
+    margin-top: 25px
+    align-items: center
+    margin-right: 4px
+  &__profile
+    background-color: $secondaryColor
+    color: #FFFFFF
+    text-decoration: none
+    padding: 15px 51px
+    border-radius: 25px
+    max-width: 165px
+    width: 165px
+    height: 50px
   &__elements
     display: flex
     flex-direction: column
     max-width: 655px
+    margin: 88px auto 108px auto
+  &__title
+    margin-bottom: 15px
+  &__text
+    margin-bottom: 17px
   &__h1
     font-style: normal
     font-weight: bold
     font-size: 36px
     line-height: 45px
     text-align: center
+    margin-top: 0px
+    margin-bottom: 0px
   &__p
     font-style: normal
     font-weight: normal
@@ -51,23 +76,59 @@
     text-align: center
   &__buttons
     align-self: center
+  &__devices
+    max-height: 485px
+    overflow: hidden
+    &-image
+      overflow: hidden
+      object-fit: none
+      object-position: 0% 0%
+  &__resizable
+    position: relative
 .nav
   list-style: none
   display: flex
   align-items: center
   justify-content: space-between
+  padding: 0 0
+  min-width: 355px
+  margin-top: 0px
+  margin-bottom: 0px
+  margin-right: 52px
+  &__link
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none
+    color: $fontColorHeader
+    &:hover
+      color: $primaryColor
 .button
-  &__header
+  &-resize
+    position: absolute
+    border: none
+    outline: none
+    padding: 0 0
+    background-color: transparent
+    left: 50%
+    top: 90%
+    transform: translateX(-50%)
+  &-header
     border-radius: 25px
     border-color: $primaryColor
-    padding: 14px 44px 20px 44px
+    padding: 10px 25px 14px
     font-style: normal
     font-weight: bold
     font-size: 16px
     line-height: 20px
+    width: 166px
+    height: 50px
     &-primary
       background-color: $primaryColor
       color: #fff
+      margin-right: 25px
     &-secondary
       background-color: #fff
       color: $primaryColor
