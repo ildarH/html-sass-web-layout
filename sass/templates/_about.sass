@@ -1,0 +1,79 @@
+.about
+  display: flex
+  flex-direction: column
+  padding-top: 60px
+  min-height: 1110px
+  &__card
+    display: flex
+  &__screen
+    position: relative
+    height: 373px
+    width: 558px
+  &__back
+    background: linear-gradient(147.4deg, #0F7BFF 7.27%, #0063DD 93.68%)
+    z-index: 0
+    position: absolute
+    width: 483px
+    height: 390px
+    transform: rotate(50deg)
+    border-radius: 40px
+    &-forHorizontal
+      left: -40px
+      top: -8px
+    &-forVertical
+      top: 75px
+      left: 17px
+  &__image
+    position: absolute
+    z-index: 1
+  &__img
+    &-left
+      max-width: 558px
+      max-height: 373px
+      border-radius: 20px
+    &-right
+      width: 362px
+      max-width: 362px
+      height: 408px
+      max-height: 408px
+      border-radius: 20px
+      overflow: hidden
+      object-fit: cover
+      object-position: 72% 0%
+  &__main
+    display: flex
+    flex-direction: column
+    // justify-content: center
+  &__h2
+    font-style: normal
+    font-weight: 500
+    font-size: 32px
+    line-height: 40px
+    margin-top: 95px
+    margin-bottom: 12px
+  &__p
+    line-height: 24px
+  &__link
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    text-decoration: none
+    color: $secondaryColor
+    position: relative
+    &:after
+      content: '';
+      background: url('./../img/link_arrow.png')
+      position: absolute
+      left: 100px
+      top: 3px
+      width: 68px
+      height: 16px
+.card
+  &-1
+    margin-bottom: 233px
+    &__main
+      padding-left: 128px
+  &-2
+    &__main
+      min-width: 686px
+      padding-right: 130px
