@@ -1,0 +1,113 @@
+.widget
+  background-color: $primaryColor
+  padding-top: 118px
+.subscribe
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-bottom: 119px
+  &__h2
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    color: #FFFFFF
+    margin-top: 0
+    margin-bottom: 30px
+  &__form
+    display: flex
+    flex-direction: row
+    position: relative
+  &__input
+    border-radius: 25px
+    background-color: $secondaryColor
+    border: 1px solid transparent
+    padding-top: 11px
+    padding-right: 180px
+    padding-bottom: 15px
+    padding-left: 28px
+    overflow: hidden
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 24px
+    color: #FFFFFF
+    width: 558px
+    outline: none
+    &::placeholder
+      color: #FFFFFF
+      opacity: 1
+  &__button
+    position: absolute
+    right: 0
+    border-top-right-radius: 25px
+    border-bottom-right-radius: 25px
+    border: 1px solid transparent
+    outline: none
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 24px
+    color: #0063DD
+    background-color: #FFFFFF
+    padding-top: 11px
+    padding-left: 40px
+    padding-right: 40px
+    padding-bottom: 15px
+.footer
+  background-color: $secondaryColor
+  &__wrapper
+    display: flex
+    flex-direction: row
+    padding-top: 45px
+    padding-bottom: 46px
+    justify-content: space-between
+    align-items: center
+    position: relative
+  &__company
+    margin-left: 202px
+  &__link
+
+  &__icon
+    width: 29px
+    height: 29px
+    object-fit: scale-down
+    overflow: hidden
+    margin-right: 7px
+    margin-top: 5px;
+  &__scroll
+    position: absolute
+    bottom: 32px
+    right: -229px
+  &__scrollButton
+    border-radius: 50%
+    width: 70px
+    height: 70px
+    border: 1px solid transparent
+  &__scrollImg
+    object-fit: scale-down
+    overflow: hidden
+    transform: rotate(270deg)
+    filter: invert(60%) sepia(427%) saturate(1373%) hue-rotate(204deg) brightness(97%) contrast(104%)
+
+.copyright
+  &__text, &__link
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 24px
+    color: #FFFFFF
+  &__link
+    text-decoration: none
+    margin-right: 34px
+
+.icon
+  &__fb
+    &:hover
+      filter: opacity(0.5) drop-shadow(0 0 0 #465996)
+  &__tw
+    &:hover
+      filter: opacity(0.5) drop-shadow(0 0 0 #609FEF)
+  &__yt
+    &:hover
+      filter: opacity(0.5) drop-shadow(0 0 0 #F7081C)

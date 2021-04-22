@@ -475,25 +475,35 @@
     <footer class="widget">
       <div class="container">
         <section class="subscribe">
-          <h2>AppSon</h2>
-          <form>
-            <input type="text" placeholder="Enter your Email" />
-            <button>SUBSCRIBE</button>
+          <h2 class="subscribe__h2">AppSon</h2>
+          <form class="subscribe__form">
+            <input class="subscribe__input" type="text" placeholder="Enter your Email" />
+            <button class="subscribe__button button">SUBSCRIBE</button>
           </form>
         </section>
-        <section class="footer">
-          <div class="footer__copyright">© 2018 Copyright, All Rights Reserved by AppSon</div>
-          <div class="footer__company">
-            <a href="#">Terms & Condition</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Help</a>
-          </div>
-          <div class="footer__icons"></div>
-          <div class="footer__scroll">
-            <button class="footer__scroll footer__scrollButton"></button>
-          </div>
-        </section>
       </div>
+      <section class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__copyright">
+              <span class="copyright__text">© 2018 Copyright, All Rights Reserved by AppSon</span>
+            </div>
+            <div class="footer__company">
+              <a class="copyright__link" href="#">Terms & Condition</a>
+              <a class="copyright__link" href="#">Privacy Policy</a>
+              <a class="copyright__link" href="#">Help</a>
+            </div>
+            <div class="footer__iconsWrapper">
+              <a class="footer__link" href="#"><img class="footer__icon icon icon__fb" src="./img/icon_footer_fb.png" alt="Our Facebook"></a>
+              <a class="footer__link" href="#"><img class="footer__icon icon icon__tw" src="./img/icon_footer_twitter.png" alt="Our Twitter"></a>
+              <a class="footer__link" href="#"><img class="footer__icon icon icon__yt" src="./img/icon_footer_youtube.png" alt="Our YouTube"></a>
+            </div>
+            <div class="footer__scroll">
+              <button class="footer__scrollButton button"><img class="footer__scrollImg" src="./img/button_arrow.png" alt="scroll up"></button>
+            </div>
+          </div>
+        </div>
+      </section>
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
