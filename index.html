@@ -15,15 +15,15 @@
   </head>
   <body>
     <div class="mobile">
-      <div class="mobile__overlay"></div>
-      <div class="mobile__menu">
-        <!-- <button class="mobile__button menu-closed">
-          <img src="./img/menu-button-open.svg" alt="icon: open">
-        </button> -->
-        <button class="mobile__button menu-opened">
+      <div class="mobile__overlay" id='mobileOverlay'></div>
+      <button class="mobile__button menu-closed" id='mobileOpen'>
+        <img src="./img/menu-button-open.svg" alt="icon: open">
+      </button>
+      <div class="mobile__menu" id='mobileMenu'>
+        <button class="mobile__button menu-opened" id='mobileClose'>
           <img src="./img/menu-button-close.svg" alt="icon: close">
         </button>
-        <nav class="mobile__nav">
+        <nav class="mobile__nav" id='mobileNav'>
           <ul class="mobile__list">
             <li class="mobile__item"><a href="index.html" class="mobile__link">HOME</a></li>
             <li class="mobile__item"><a href="#features" class="mobile__link">FEATURES</a></li>
@@ -85,7 +85,7 @@
                 alt="icon: Analysis"
               />
             </div>
-            <div class="features__title"><h2 class="features__header">Analysis</h2></div>
+            <div class="features__title"><h3 class="features__h3">Analysis</h3></div>
             <div class="features__text">
               <p class="features__p">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -101,7 +101,7 @@
                 alt="icon: Clean Design"
               />
             </div>
-            <div class="features__title"><h2 class="features__header">Clean Design</h2></div>
+            <div class="features__title"><h3 class="features__h3">Clean Design</h3></div>
             <div class="features__text">
               <p class="features__p">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -117,7 +117,7 @@
                 alt="icon: Messaging"
               />
             </div>
-            <div class="features__title"><h2 class="features__header">Messaging</h2></div>
+            <div class="features__title"><h3 class="features__h3">Messaging</h3></div>
             <div class="features__text">
               <p class="features__p">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
