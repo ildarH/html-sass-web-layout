@@ -4,109 +4,77 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>AppSon</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__svg-container">
-        <svg
-          viewBox="0 0 1920 1054"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="xMinYMin meet"
-          class="header__svg-content"
-        >
-          <g filter="url(#filter0_d)">
-            <path
-              d="M140.5 928.588C88 945 24.5 991.5 0 1029L1920 1028.59V0H1659.5C1538 0 1519.5 295 1447.5 370.5C1352.05 470.587 1308.1 470.587 1127.14 470.587H1126.5C870.5 470.587 756.618 791.655 465.5 872.087C261 928.588 263.456 890.152 140.5 928.588Z"
-              fill="url(#paint0_linear)"
-            />
-          </g>
-          <defs>
-            <filter
-              id="filter0_d"
-              x="-39"
-              y="-39"
-              width="1984"
-              height="1093"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feColorMatrix
-                in="SourceAlpha"
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              />
-              <feOffset dx="-7" dy="-7" />
-              <feGaussianBlur stdDeviation="16" />
-              <feColorMatrix
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0.11759 0 0 0 0 0.2625 0 0 0 0.06 0"
-              />
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-            </filter>
-            <linearGradient
-              id="paint0_linear"
-              x1="1587.5"
-              y1="39.4993"
-              x2="1386"
-              y2="797.499"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop offset="0.0001" stop-color="#0F7BFF" />
-              <stop offset="1" stop-color="#0063DD" />
-            </linearGradient>
-          </defs>
-        </svg>
+    <div class="mobile">
+      <div class="mobile__overlay"></div>
+      <div class="mobile__menu">
+        <!-- <button class="mobile__button menu-closed">
+          <img src="./img/menu-button-open.svg" alt="icon: open">
+        </button> -->
+        <button class="mobile__button menu-opened">
+          <img src="./img/menu-button-close.svg" alt="icon: close">
+        </button>
+        <nav class="mobile__nav">
+          <ul class="mobile__list">
+            <li class="mobile__item"><a href="index.html" class="mobile__link">HOME</a></li>
+            <li class="mobile__item"><a href="#features" class="mobile__link">FEATURES</a></li>
+            <li class="mobile__item"><a href="#pricing" class="mobile__link">PRICING</a></li>
+            <li class="mobile__item"><a href="#news" class="mobile__link">PAGES</a></li>
+          </ul>
+          <a href="#" class="mobile__profile">SIGN UP</a>
+        </nav>
       </div>
+    </div>
+    <header class="header">
       <div class="header__menu">
         <a href="index.html" class="header__logo">AppSon</a>
-
         <nav class="header__nav">
           <ul class="nav">
-            <li class="nav__item"><a href="#" class="nav__link">HOME</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">FEATURES</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">PRICING</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">PAGES</a></li>
+            <li class="nav__item"><a href="index.html" class="nav__link">HOME</a></li>
+            <li class="nav__item"><a href="#features" class="nav__link">FEATURES</a></li>
+            <li class="nav__item"><a href="#pricing" class="nav__link">PRICING</a></li>
+            <li class="nav__item"><a href="#news" class="nav__link">PAGES</a></li>
           </ul>
           <a href="#" class="header__profile">SIGN UP</a>
         </nav>
       </div>
       <div class="container">
-        <div class="header__elements">
-          <div class="header__title"><h1 class="header__h1">Best Desktop App for You</h1></div>
-          <div class="header__text">
-            <p class="header__p">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua.
-            </p>
+        <div class="header__wrapper">
+          <div class="header__elements">
+            <div class="header__title"><h1 class="header__h1">Best Desktop App for You</h1></div>
+            <div class="header__text">
+              <p class="header__p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="header__buttons">
+              <button class="button button-header button-header-primary">Download</button>
+              <button class="button button-header button-header-secondary">Free Trial</button>
+            </div>
           </div>
-          <div class="header__buttons">
-            <button class="button button-header button-header-primary">Download</button>
-            <button class="button button-header button-header-secondary">Free Trial</button>
+          <div class="header__resizable">
+            <div class="header__devices">
+              <img class="header__devices-image" src="img/devices.png" alt="devices" />
+            </div>
+            <button class="button button-scrollDown" id="scrollDown">
+              <img src="./img/scrolldown.png" alt="scrolldown" />
+            </button>
           </div>
-        </div>
-        <div class="header__resizable">
-          <div class="header__devices">
-            <img class="header__devices-image" src="img/devices.png" alt="devices" />
-          </div>
-          <button class="button button-resize">
-            <img src="./img/scrolldown.png" alt="scrolldown" />
-          </button>
         </div>
       </div>
     </header>
-    <section class="features">
+    <section class="features" id="features">
       <div class="container">
         <div class="features__container">
           <div class="features__card">
@@ -119,7 +87,7 @@
             </div>
             <div class="features__title"><h2 class="features__header">Analysis</h2></div>
             <div class="features__text">
-              <p class="features_p">
+              <p class="features__p">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore
               </p>
@@ -135,7 +103,7 @@
             </div>
             <div class="features__title"><h2 class="features__header">Clean Design</h2></div>
             <div class="features__text">
-              <p class="features_p">
+              <p class="features__p">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore
               </p>
@@ -151,7 +119,7 @@
             </div>
             <div class="features__title"><h2 class="features__header">Messaging</h2></div>
             <div class="features__text">
-              <p class="features_p">
+              <p class="features__p">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore
               </p>
@@ -252,7 +220,7 @@
       </div>
     </section>
     <div class="container">
-      <section class="pricingPlan">
+      <section class="pricingPlan" id="pricing">
         <div class="pricingPlan__main">
           <h2 class="pricingPlan__main-h2">Pricing Plan</h2>
           <p class="pricingPlan__main-p">
@@ -332,61 +300,108 @@
         <h2 class="testimonials__header">Trusted By More Than 55M Peoples</h2>
 
         <div class="testimonials__slider">
-          <div class="slide">
-            <div class="slide__header">
-              <div class="slide__name">
-                <h4 class="slide__h4">Raisa Moni</h4>
-                <p class="slide__happyCustomer">Envato Customer</p>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__header">
+                    <div class="slide__name">
+                      <h4 class="slide__h4">Raisa Moni</h4>
+                      <p class="slide__happyCustomer">Envato Customer</p>
+                    </div>
+                    <div class="slide__iconWrapper">
+                      <img
+                        class="slide__icon"
+                        src="./img/icon_testimonials_twitter.png"
+                        alt="icon: twitter"
+                      />
+                    </div>
+                  </div>
+                  <div class="slide__main">
+                    <p class="slide__review">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                      incididunt ut labore etamet.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="slide__iconWrapper">
-                <img
-                  class="slide__icon"
-                  src="./img/icon_testimonials_twitter.png"
-                  alt="icon: twitter"
-                />
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__header">
+                    <div class="slide__name">
+                      <h4 class="slide__h4">Raisa Moni</h4>
+                      <p class="slide__happyCustomer">Envato Customer</p>
+                    </div>
+                    <div class="slide__iconWrapper">
+                      <img
+                        class="slide__icon"
+                        src="./img/icon_testimonials_twitter.png"
+                        alt="icon: twitter"
+                      />
+                    </div>
+                  </div>
+                  <div class="slide__main">
+                    <p class="slide__review">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                      incididunt ut labore etamet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__header">
+                    <div class="slide__name">
+                      <h4 class="slide__h4">Raisa Moni</h4>
+                      <p class="slide__happyCustomer">Envato Customer</p>
+                    </div>
+                    <div class="slide__iconWrapper">
+                      <img
+                        class="slide__icon"
+                        src="./img/icon_testimonials_twitter.png"
+                        alt="icon: twitter"
+                      />
+                    </div>
+                  </div>
+                  <div class="slide__main">
+                    <p class="slide__review">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                      incididunt ut labore etamet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide">
+                  <div class="slide__header">
+                    <div class="slide__name">
+                      <h4 class="slide__h4">Raisa Moni</h4>
+                      <p class="slide__happyCustomer">Envato Customer</p>
+                    </div>
+                    <div class="slide__iconWrapper">
+                      <img
+                        class="slide__icon"
+                        src="./img/icon_testimonials_twitter.png"
+                        alt="icon: twitter"
+                      />
+                    </div>
+                  </div>
+                  <div class="slide__main">
+                    <p class="slide__review">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                      incididunt ut labore etamet.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="slide__main">
-              <p class="slide__review">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore etamet.
-              </p>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide__header">
-              <div class="slide__name">
-                <h4 class="slide__h4">Raisa Moni</h4>
-                <p class="slide__happyCustomer">Envato Customer</p>
-              </div>
-              <div class="slide__iconWrapper">
-                <img
-                  class="slide__icon"
-                  src="./img/icon_testimonials_twitter.png"
-                  alt="icon: twitter"
-                />
-              </div>
-            </div>
-            <div class="slide__main">
-              <p class="slide__review">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore etamet.
-              </p>
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
-        <!-- <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div> -->
       </div>
     </section>
     <div class="container">
-      <section class="news">
+      <section class="news" id="news">
         <div class="news__header">
           <h2 class="news__h2">Latest News From Us</h2>
           <p class="news__summary">
@@ -477,14 +492,14 @@
         <section class="subscribe">
           <h2 class="subscribe__h2">AppSon</h2>
           <form class="subscribe__form">
-            <input class="subscribe__input" type="text" placeholder="Enter your Email" />
+            <input class="subscribe__input" type="email" placeholder="Enter your Email" />
             <button class="subscribe__button button">SUBSCRIBE</button>
           </form>
         </section>
       </div>
-      <section class="footer">
+      <div class="footer">
         <div class="container">
-          <div class="footer__wrapper">
+          <div class="footer__wrapper copyright">
             <div class="footer__copyright">
               <span class="copyright__text">© 2018 Copyright, All Rights Reserved by AppSon</span>
             </div>
@@ -493,17 +508,34 @@
               <a class="copyright__link" href="#">Privacy Policy</a>
               <a class="copyright__link" href="#">Help</a>
             </div>
-            <div class="footer__iconsWrapper">
-              <a class="footer__link" href="#"><img class="footer__icon icon icon__fb" src="./img/icon_footer_fb.png" alt="Our Facebook"></a>
-              <a class="footer__link" href="#"><img class="footer__icon icon icon__tw" src="./img/icon_footer_twitter.png" alt="Our Twitter"></a>
-              <a class="footer__link" href="#"><img class="footer__icon icon icon__yt" src="./img/icon_footer_youtube.png" alt="Our YouTube"></a>
+            <div class="footer__iconsWrapper link">
+              <a class="footer__link link__fb" href="#"
+                ><img
+                  class="footer__icon"
+                  src="./img/icon_footer_fb.png"
+                  alt="Our Facebook"
+              /></a>
+              <a class="footer__link link__tw" href="#"
+                ><img
+                  class="footer__icon"
+                  src="./img/icon_footer_twitter.png"
+                  alt="Our Twitter"
+              /></a>
+              <a class="footer__link link__yt" href="#"
+                ><img
+                  class="footer__icon"
+                  src="./img/icon_footer_youtube.png"
+                  alt="Our YouTube"
+              /></a>
             </div>
             <div class="footer__scroll">
-              <button class="footer__scrollButton button"><img class="footer__scrollImg" src="./img/button_arrow.png" alt="scroll up"></button>
+              <button class="footer__scrollButton button" id="scrollToTop">
+                <img class="footer__scrollImg" src="./img/button_arrow.png" alt="scroll up" />
+              </button>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>

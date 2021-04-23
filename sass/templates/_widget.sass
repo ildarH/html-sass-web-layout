@@ -76,14 +76,19 @@
     margin-right: 7px
     margin-top: 5px;
   &__scroll
-    position: absolute
-    bottom: 32px
-    right: -229px
+    position: relative
   &__scrollButton
     border-radius: 50%
     width: 70px
     height: 70px
     border: 1px solid transparent
+    position: absolute
+    bottom: 0px
+    right: -27%
+    transform: translateY(50%)
+    left: 60px
+    &:hover
+      background-color: $primaryColor
   &__scrollImg
     object-fit: scale-down
     overflow: hidden
@@ -100,8 +105,10 @@
   &__link
     text-decoration: none
     margin-right: 34px
+    &:hover
+      text-decoration: underline
 
-.icon
+.link
   &__fb
     &:hover
       filter: opacity(0.5) drop-shadow(0 0 0 #465996)

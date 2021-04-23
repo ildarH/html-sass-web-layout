@@ -1,0 +1,80 @@
+.mobile
+  display: none
+  &__overlay
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(15, 123, 255, 0.2)
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &_visible
+      visibility: visible
+      opacity: 1
+  &__menu
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: end;
+    position: absolute
+    top: 50px
+    right: 50px
+    background-color: #FFFFFF
+    padding-top: 50px
+    padding-right: 20px
+    padding-bottom: 20px
+    padding-left: 20px
+    border-radius: 25px
+    box-shadow: rgba(0,78,172,0.08) 0px 4px 20px
+  &__button
+    position: absolute
+    top: 25px
+    right: 25px
+    width: 30px
+    height: 30px
+    background-color: white
+    padding: 4px
+    border: none
+    outline: none
+    &:hover
+      cursor: pointer
+  &__nav
+    display: flex
+    flex-direction: column
+    text-align: end
+  &__list
+    list-style: none
+    display: flex
+    flex-direction: column
+    padding-left: 0
+    padding-right: 20px
+  &__item
+    margin-top: 15px
+    margin-bottom: 15px
+  &__link
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+    text-transform: uppercase
+    text-decoration: none
+    color: $fontColorHeader
+  &__profile
+    background-color: $secondaryColor
+    color: #FFFFFF
+    text-decoration: none
+    padding: 15px 51px
+    border-radius: 20px
+    max-width: 165px
+    width: 165px
+    height: 50px
+
+.menu
+  &-opened
+    display: none
+  &-closed
+    display: none
+
+

@@ -1,17 +1,12 @@
 .header
   display: flex
   flex-direction: column
-  &__svg-container
-    display: inline-block
-    // position: relative
-    width: 100%
-    vertical-align: middle
-    overflow: hidden
-  &__svg-content
-    display: inline-block
-    position: absolute
-    top: 0
-    left: 0
+  background: url('./../img/vector.svg')
+  background-size: 100% 100%
+  background-repeat: no-repeat
+  &__wrapper
+    
+    
   &__logo
     display: flex
     justify-self: start
@@ -19,7 +14,6 @@
     font-style: normal
     font-weight: bold
     font-size: 36px
-    // line-height: 45px
     color: #fff
     padding: 25px 22px 33px
     border-bottom-left-radius: 22px
@@ -35,7 +29,7 @@
     z-index: 1000
     margin: auto
     max-width: 1645px
-    width: 1645px
+    width: 100%
   &__nav
     display: flex
     height: 50px
@@ -51,6 +45,9 @@
     max-width: 165px
     width: 165px
     height: 50px
+    &:hover
+      text-decoration: underline
+      cursor: pointer
   &__elements
     display: flex
     flex-direction: column
@@ -105,8 +102,9 @@
     color: $fontColorHeader
     &:hover
       color: $primaryColor
+      text-decoration: underline
 .button
-  &-resize
+  &-scrollDown
     position: absolute
     border: none
     outline: none
