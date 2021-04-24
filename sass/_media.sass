@@ -1,7 +1,10 @@
-@media (min-width: 1450px )
+@media (min-width: 1450px)
   .mobile
     display: none
-  
+@media (max-width: 1640px)
+  .footer
+    &__scrollButton
+      left: 70px
 @media (max-width: 1450px)
   .container
     max-width: 1000px
@@ -99,6 +102,7 @@
       margin-left: 35px
     &__scrollButton
       left: -20px
+
 @media (max-width: 1194px)
   .container
     max-width: 80%
@@ -219,6 +223,25 @@
       flex-direction: column
     &__scrollButton
       left: 125px
+
+@media ( max-width: 1130px )
+  .footer
+    &__scrollButton
+      left: 6vw
+@media ( max-width: 992px )
+  .howDoesItWorks
+    &__line
+      width: 50%
+  .footer
+    &__wrapper
+      flex-direction: column
+      min-height: 300px
+      justify-content: space-around
+      align-items: flex-start
+    &__company
+      margin-left: 0
+    &__scrollButton
+      left: 35vw
 @media (max-width: 767px)
   .header
     &__devices
@@ -235,9 +258,6 @@
       margin-top: 30px
   .about
     padding-bottom: 85px
-  .howDoesItWorks
-    &__line
-      width: 50%
   .card
     &-2
       &__main
@@ -254,16 +274,6 @@
   .subscribe
     &__input
       width: auto
-  .footer
-    &__wrapper
-      flex-direction: column
-      min-height: 300px
-      justify-content: space-around
-      align-items: flex-start
-    &__company
-      margin-left: 0
-    &__scrollButton
-      left: 35vw
 @media (max-width: 640px)
   .header
     &__devices
