@@ -18,6 +18,7 @@ const mobileCloseButton = document.getElementById('mobileClose')
 const mobileOverlay = document.getElementById('mobileOverlay')
 const mobileMenu = document.getElementById('mobileMenu')
 const mobileNav = document.getElementById('mobileNav')
+const navLink = document.querySelectorAll('#mobileLink')
 
 function scrollToTop() {
   window.scrollTo({top: 0, behavior: 'smooth'});
@@ -30,6 +31,7 @@ function openMobile() {
   mobileMenu.style.display = 'flex'
   mobileNav.style.display = 'flex'
   mobileOverlay.classList.add('mobile__overlay_visible')
+  mobileOverlay.addEventListener('click', closeMobile)
   mobileCloseButton.style.display = 'block'
 }
 function closeMobile() {
@@ -38,6 +40,7 @@ function closeMobile() {
   mobileNav.style.display = 'none'
   mobileOverlay.classList.remove('mobile__overlay_visible')
   mobileOverlay.classList.add('mobile__overlay')
+  mobileOverlay.removeEventListener('click', closeMobile)
   mobileCloseButton.style.display = 'none'
 }
 scrollToTopButton.addEventListener('click', scrollToTop)
@@ -47,3 +50,4 @@ mobileCloseButton.addEventListener('click', closeMobile)
 window.addEventListener('keydown', e => {
   if (e.key == 'Escape') closeMobile(e)
 })
+navLink.forEach(link => link.addEventListener('click', closeMobile))
