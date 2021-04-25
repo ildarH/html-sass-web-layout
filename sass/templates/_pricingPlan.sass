@@ -1,7 +1,7 @@
 .pricingPlan
   display: flex
   padding-top: 130px
-  padding-bottom: 130px
+  padding-bottom: 136px
   &__header
     display: flex
     flex-direction: column
@@ -37,25 +37,52 @@
     font-weight: bold
     font-size: 16px
     line-height: 20px
-    padding: 12px 52px 14px 54px
-    &-left
-      border-top-left-radius: 25px
-      border-bottom-left-radius: 25px
-      border-right: 1px solid rgb(15, 123, 255)
-    &-right
-      border-top-right-radius: 25px
-      border-bottom-right-radius: 25px
-      border-left: 1px solid rgb(15, 123, 255)
-    &-dark
-      border-color: $primaryColor
-      background-color: $primaryColor
-      color: #FFFFFF
+    padding: 12px 50px 14px 53px
     &-light
       border-color: $primaryColor
       background-color: #FFFFFF
       color: $primaryColor
     &-round
       border-radius: 25px
+  &__fieldset
+    display: flex
+  &__input
+    width: 0; height: 0; position: absolute; left: -9999px
+    &-montly, &-yearly
+      &:hover
+        background-color: $primaryColor
+        cursor: pointer
+  input:hover + label
+    background-color: $primaryColor
+    cursor: pointer
+    color: #FFFFFF
+  input:checked + label
+    background-color: $primaryColor
+    color: #FFFFFF
+    z-index: 1
+  
+  &__label
+    &-monthly, &-yearly
+      margin: 0
+      position: relative
+      display: inline-block
+      border: solid 2px $primaryColor
+      background-color: #fff
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      padding: 12px 52px 14px 54px
+      transition: border-color .15s ease-out, color .25s ease-out, background-color .15s ease-out, box-shadow .15s ease-out
+
+    &-monthly
+      border-bottom-left-radius: 25px
+      border-top-left-radius: 25px
+      border-right: 1px solid $primaryColor
+    &-yearly
+      border-bottom-right-radius: 25px
+      border-top-right-radius: 25px
+      border-left: 1px solid $primaryColor
   &__image
     width: 110px
     height: 110px
@@ -84,8 +111,8 @@
       margin-bottom: 0
     &-items
       text-align: center
-      margin-top: 10px;
-      margin-bottom: 25px
+      margin-top: 10px
+      margin-bottom: 30px
   &__list
     list-style: none
     padding-left: 0

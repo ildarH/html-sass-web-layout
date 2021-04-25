@@ -25,10 +25,18 @@
         </button>
         <nav class="mobile__nav" id="mobileNav">
           <ul class="mobile__list">
-            <li class="mobile__item"><a href="index.html" id="mobileLink" class="mobile__link">HOME</a></li>
-            <li class="mobile__item"><a href="#features" id="mobileLink" class="mobile__link">FEATURES</a></li>
-            <li class="mobile__item"><a href="#pricing" id="mobileLink" class="mobile__link">PRICING</a></li>
-            <li class="mobile__item"><a href="#news" id="mobileLink" class="mobile__link">PAGES</a></li>
+            <li class="mobile__item">
+              <a href="index.html" id="mobileLink" class="mobile__link">HOME</a>
+            </li>
+            <li class="mobile__item">
+              <a href="#features" id="mobileLink" class="mobile__link">FEATURES</a>
+            </li>
+            <li class="mobile__item">
+              <a href="#pricing" id="mobileLink" class="mobile__link">PRICING</a>
+            </li>
+            <li class="mobile__item">
+              <a href="#news" id="mobileLink" class="mobile__link">PAGES</a>
+            </li>
           </ul>
           <a href="#" id="mobileLink" class="mobile__profile">SIGN UP</a>
         </nav>
@@ -140,7 +148,7 @@
             </div>
           </div>
           <div class="about__main card-1__main">
-            <h2 class="about__h2">Easy Messaging</h2>
+            <h2 class="about__h2 about__h2-up">Easy Messaging</h2>
             <p class="about__p about__p_right">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
@@ -151,7 +159,7 @@
         </div>
         <div class="about__card card-2">
           <div class="about__main card-2__main">
-            <h2 class="about__h2">Keep In Touch</h2>
+            <h2 class="about__h2 about__h2-down">Keep In Touch</h2>
             <p class="about__p about__p_left">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
@@ -182,7 +190,7 @@
           </div>
           <hr class="howDoesItWorks__line" />
           <div class="howDoesItWorks__cards">
-            <div class="howDoesItWorks__card">
+            <div class="howDoesItWorks__card howDoesItWorks__card-left">
               <img
                 src="./img/icon_howDoesItWorks_createAnAccount.png"
                 alt="icon: Create An Account"
@@ -193,7 +201,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
               </p>
             </div>
-            <div class="howDoesItWorks__card">
+            <div class="howDoesItWorks__card howDoesItWorks__card-center">
               <img
                 src="./img/icon_howDoesItWorks_confirmEmail.png"
                 alt="icon: Confirm Email"
@@ -204,7 +212,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
               </p>
             </div>
-            <div class="howDoesItWorks__card">
+            <div class="howDoesItWorks__card howDoesItWorks__card-right">
               <img
                 src="./img/icon_howDoesItWorks_seeResults.png"
                 alt="icon: See Results"
@@ -228,16 +236,29 @@
             incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
           </p>
           <div class="pricingPlan__buttons">
-            <button
-              class="button pricingPlan__button pricingPlan__button-dark pricingPlan__button-left"
-            >
-              Monthly
-            </button>
-            <button
-              class="button pricingPlan__button pricingPlan__button-light pricingPlan__button-right"
-            >
-              Yearly
-            </button>
+            <fileldset class="pricingPlan__fieldset">
+              <input
+                class="pricingPlan__input pricingPlan__input-monthly"
+                value="monthly"
+                name="planSwitch"
+                type="radio"
+                checked="checked"
+                id="monthly"
+              />
+              <label class="pricingPlan__label pricingPlan__label-monthly" for="monthly"
+                >Monthly</label
+              >
+              <input
+                class="pricingPlan__input pricingPlan__input-yearly"
+                value="yearly"
+                name="planSwitch"
+                type="radio"
+                id="yearly"
+              />
+              <label class="pricingPlan__label pricingPlan__label-yearly" for="yearly"
+                >Yearly</label
+              >
+            </fileldset>
           </div>
         </div>
         <div class="pricingPlan__cards">
@@ -262,7 +283,7 @@
               ><span class="pricingPlan__number">49.00</span>
             </div>
             <button
-              class="pricingPlan__button pricingPlan__button-dark pricingPlan__button-round button"
+              class="pricingPlan__button pricingPlan__button-light pricingPlan__button-round button"
             >
               Try Now
             </button>
@@ -529,10 +550,10 @@
               </button>
             </div>
           </div>
-         </div>
+        </div>
       </div>
     </footer>
-    
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>

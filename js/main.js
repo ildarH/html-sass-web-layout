@@ -2,13 +2,39 @@ let swiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
   loop: true,
   resizeObserver: true,
-  slidesPerView: 'auto',
-  spaceBetween: 30,
+  // slidesPerView: 'auto',
+  // spaceBetween: 30,
   grabCursor: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 15
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 15
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 25
+    },
+    // when window width is >= 640px
+    1130: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1290: {
+      slidesPerView: 'auto',
+      spaceBetween: 30
+    }
+  },
+
 });
 const scrollToTopButton = document.getElementById('scrollToTop')
 const featuresSection = document.getElementById('features')

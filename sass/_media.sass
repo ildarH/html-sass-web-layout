@@ -1,7 +1,15 @@
 @media (min-width: 1450px)
   .mobile
     display: none
+@media (max-width: 1960px)
+  .swiper-container
+    max-width: 1200px
+@media (max-width: 1700px)
+  .swiper-container
+    max-width: 1000px
 @media (max-width: 1640px)
+  .swiper-container
+    max-width: 768px
   .footer
     &__scrollButton
       left: 70px
@@ -12,6 +20,9 @@
     &__menu
       width: 90%
   .card
+    &-1
+      &__main
+        padding-left: 48px
     &-2
       &__main
         min-width: auto
@@ -78,6 +89,11 @@
       font-size: 14px
     &__text, &__link
       font-size: 14px
+  .swiper
+    &-container
+      max-width: 770px
+    &-slide
+      width: 377px !important
 @media (max-width: 1194px)
   .button
     &-header
@@ -90,7 +106,7 @@
       padding-top: 10px
       padding-bottom: 10px
   .swiper-container
-    max-width: 560px
+    max-width: 764px
   .freeTrial
     &__button
       font-size: 14px
@@ -165,10 +181,11 @@
     &__image
       display: none
     &__main
-      max-width: 80%
+      max-width: 100%
       margin: auto
-  .swiper-container
-    max-width: 500px
+    &__slider
+      max-width: 100%
+      overflow: hidden
   .pricingPlan
     flex-direction: column
     margin: auto
@@ -223,12 +240,17 @@
       flex-direction: column
     &__scrollButton
       left: 125px
+  .swiper-container
+    max-width: 770px
 
 @media ( max-width: 1130px )
+  .header
+    background-size: cover
   .footer
     &__scrollButton
       left: 6vw
 @media ( max-width: 992px )
+
   .howDoesItWorks
     &__line
       width: 50%
@@ -242,10 +264,27 @@
       margin-left: 0
     &__scrollButton
       left: 35vw
-@media (max-width: 767px)
-  .header
-    &__devices
-      max-height: 335px
+  .swiper-container
+    max-width: 770px
+@media (max-width: 780px)
+  .testimonials
+    &__main
+      max-width: 510px
+    &__slider
+      max-width: 100%
+      width: 100%
+  .slide
+    width: 240px !important
+    &__review
+      font-size: 12px
+  .swiper
+    &-container
+      max-width: 510px
+    &-slide
+      width: 240px !important
+  .subscribe
+    &__input
+      width: auto
   .features
     max-height: min-content
     height: auto
@@ -256,6 +295,10 @@
       padding-bottom: 80px
     &__card
       margin-top: 30px
+@media (max-width: 767px)
+  .header
+    &__devices
+      max-height: 335px
   .about
     padding-bottom: 85px
   .card
@@ -271,9 +314,7 @@
     &__title
       margin-bottom: 30px
       text-align: center
-  .subscribe
-    &__input
-      width: auto
+
 @media (max-width: 640px)
   .header
     &__devices
@@ -330,6 +371,22 @@
   .testimonials
     &__header
       margin-top: 0
+    &__slider
+      max-width: 100%
+      width: 98%
+  .slide
+    width: 240px !important
+    &__review
+      font-size: 12px
+  .swiper-container
+      max-width: 500px
+  .news
+    padding-top: 50px
+    padding-bottom: 50px
+    &__header
+      width: 90%
+    &__leftImg
+      max-width: 100%
 @media (max-width: 500px)
   .header
     &__devices
@@ -338,27 +395,21 @@
       display: flex
       flex-wrap: wrap
       align-items: center
-      justify-content: center
+      justify-content: space-between
+      width: 100%
   .button
     &-header
       &-primary
         margin-right: 0
-  .news
-    padding-top: 50px
-    padding-bottom: 50px
-    &__header
-      width: 90%
-    &__leftImg
-      max-width: 100%
   .about
     &__back
       display: none
+    &__screen
+      max-height: 268px
   .card
     &-2
       &__main
         margin-bottom: 50px
-  .slide
-    width: 340px !important
   .news
     &__card
       flex-direction: column
@@ -380,24 +431,58 @@
       position: static
       padding-top: 10px
       padding-bottom: 10px
-@media (max-width: 390px)
+  .testimonials
+    &__header
+      text-align: center
+    &__main
+      max-width: 400px
+    &__slider
+      max-width: 400px
+      width: 400px
+  .slide
+    width: 300px !important
+  .swiper
+    &-container
+      max-width: 400px
+    &-slide
+      width: 400px !important
+@media (max-width: 448px)
+  .header
+    &__buttons
+      width: 90%
+      justify-content: center
+      min-height: 130px
+@media (max-width: 400px)
   .header
     background: none
     &__devices
       max-height: 160px
-  .menu
-    &-closed
-      background-color: $primaryColor
   .news
     &__h2
       text-align: center
       font-size: 25px
-  .slide
-    width: 240px !important
-    &__review
-      font-size: 12px
   .footer
     &__scrollButton
       left: 30vw
     &__iconsWrapper
       margin-bottom: 35px
+  .pricingPlan
+    &__label
+      &-monthly, &-yearly
+        padding: 12px 25px 14px 25px
+        max-width: 100px
+  .testimonials
+    &__header
+      text-align: center
+    &__main
+      max-width: 300px
+    &__slider
+      max-width: 300px
+      width: 300px
+  .slide
+    width: 300px !important
+  .swiper
+    &-container
+      max-width: 300px
+    &-slide
+      width: 300px !important

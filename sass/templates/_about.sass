@@ -2,7 +2,7 @@
   display: flex
   flex-direction: column
   padding-top: 60px
-  padding-bottom: 144px
+  padding-bottom: 149px
   min-height: 1110px
   &__card
     display: flex
@@ -49,10 +49,16 @@
     font-weight: 500
     font-size: 32px
     line-height: 40px
-    margin-top: 95px
-    margin-bottom: 12px
+    &-up
+      margin-bottom: 12px
+      margin-top: 95px
+    &-down
+      margin-top: 99px
+      margin-bottom: 14px
   &__p
     line-height: 24px
+    letter-spacing: -0.15px
+    margin-bottom: 38px
   &__link
     font-style: normal
     font-weight: 500
@@ -62,12 +68,12 @@
     position: relative
     margin-top: 0px
     &-right
-      margin-top: 20px
+      margin-top: 0
     &:after
       content: '';
       background: url('./../img/link_arrow.png')
       position: absolute
-      left: 100px
+      left: 98px
       top: 3px
       width: 68px
       height: 16px
